@@ -1,0 +1,33 @@
+{
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2021-09-10 15:52:49 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2021-09-10 15:53:05 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "evoker": "2021-09-10 15:53:05 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "evoker": "2021-09-10 15:53:05 +0200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2021-09-10 15:49:50 +0200",
+      "desert": "2021-09-10 15:52:56 +0200"
+    },
+    "done": false
+  }
+}

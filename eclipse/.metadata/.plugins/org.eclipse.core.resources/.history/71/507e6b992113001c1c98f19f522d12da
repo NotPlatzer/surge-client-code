@@ -1,0 +1,27 @@
+package me.NotPlatzer.Infinity;
+
+import me.NotPlatzer.Infinity.ui.UIrenderer;
+
+public class Client {
+
+	
+	public static String clientname = "Infinty Client";
+	public static String clientversion = "1.0";
+	
+	public static UIrenderer uirenderer;
+	
+	public static void init() {
+		
+		uirenderer = new UIrenderer();
+		
+		
+	}	
+	
+	public static void onGui() {
+		
+		uirenderer.draw();
+	}
+		
+		
+	
+}
