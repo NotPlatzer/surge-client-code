@@ -2,38 +2,43 @@ package me.NotPlatzer.Infinity.module;
 
 import org.lwjgl.input.Keyboard;
 
+import me.NotPlatzer.Infinity.events.Event;
+import net.minecraft.client.Minecraft;
+
 public class Module {
 	
-	private String name;
-	private Category category;
-	private String description;
-	private int keycode;
-	private String[] modes;
+	public String name;
+	public Category category;
+	public String description;
+	public int keycode;
 	
 	private boolean enabled;
 	
-	public Module(String name, Category category) {
-		this(name, category, null, Keyboard.KEY_NONE, "Default");
-	}
-	
-	public Module(String name, Category category, String description) {
-		this(name, category, description, Keyboard.KEY_NONE, "Default");
-	}
+	protected Minecraft mc = Minecraft.getMinecraft();
 	
 	public Module(String name, Category category, String description, int keycode) {
-		this(name, category, null, keycode , "Default");
-	}
-	
-	public Module(String name, Category category, String description, int keycode, String... modes) {
-		
-		
-		
 		this.name = name;
 		this.category = category;
 		this.description = description;
 		this.keycode = keycode;
-		this.modes = modes;
+	}
+	
+	
+	
+	public void onEvent(Event e) {
 		
+		
+	}
+
+
+	public Category getCat() {
+		
+		return category;
+	}
+	
+	public String getName() {
+		
+		return name;
 	}
 	
 	public boolean isEnabled() {
@@ -49,19 +54,19 @@ public class Module {
 		
 	}
 	
-	public void onPreUpdate() {
+	public void onEnable() {
 		
 		
 	}
 		
 	
-	public void onPostUpdate() {
+	public void onDisable() {
 		
 		
 	}
 
 	
-	public void onKeyPressed(int keyCode) {
+	public void onKeyPressed(int keycode) {
 		if(this.keycode == keycode) {
 			this.toggle();
 		}

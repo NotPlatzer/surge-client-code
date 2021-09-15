@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
-    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.Client"/>
-    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="net.java.games.input.Keyboard"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.modules.Sprint"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.modules.SafeWalk"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="com.sun.jna.platform.unix.X11.Display"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.modules.FastPlace"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.ui.UIrenderer"/>
+    <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
     <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.module.ModuleManager"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.gui.ClickGui"/>
+    <fullyQualifiedTypeName name="com.jcraft.jogg.Packet"/>
+    <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.events.PacketEvent"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.module.Category"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.modules.Fly"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.events.EventDirection"/>
+    <fullyQualifiedTypeName name="java.awt.Event"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.events.EventType"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.events.Event"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.events.listeners.EventUpdate"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.ui.HUD"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.ScaledResolution"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.Client"/>
+    <fullyQualifiedTypeName name="me.NotPlatzer.Infinity.module.Module"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
 </qualifiedTypeNameHistroy>

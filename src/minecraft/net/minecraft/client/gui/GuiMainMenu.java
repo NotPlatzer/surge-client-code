@@ -3,6 +3,9 @@ package net.minecraft.client.gui;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Runnables;
+
+import me.NotPlatzer.Infinity.Client;
+
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.IOException;
@@ -607,69 +610,9 @@ public class GuiMainMenu extends GuiScreen
     {
         this.panoramaTimer += partialTicks;
         GlStateManager.disableAlpha();
-        this.renderSkybox(mouseX, mouseY, partialTicks);
-        GlStateManager.enableAlpha();
-        int i = 274;
-        int j = this.width / 2 - 137;
-        int k = 30;
-        int l = -2130706433;
-        int i1 = 16777215;
-        int j1 = 0;
-        int k1 = Integer.MIN_VALUE;
-        CustomPanoramaProperties custompanoramaproperties = CustomPanorama.getCustomPanoramaProperties();
-
-        if (custompanoramaproperties != null)
-        {
-            l = custompanoramaproperties.getOverlay1Top();
-            i1 = custompanoramaproperties.getOverlay1Bottom();
-            j1 = custompanoramaproperties.getOverlay2Top();
-            k1 = custompanoramaproperties.getOverlay2Bottom();
-        }
-
-        if (l != 0 || i1 != 0)
-        {
-            this.drawGradientRect(0, 0, this.width, this.height, l, i1);
-        }
-
-        if (j1 != 0 || k1 != 0)
-        {
-            this.drawGradientRect(0, 0, this.width, this.height, j1, k1);
-        }
-
-        this.mc.getTextureManager().bindTexture(MINECRAFT_TITLE_TEXTURES);
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-
-        if ((double)this.updateCounter < 1.0E-4D)
-        {
-            this.drawTexturedModalRect(j + 0, 30, 0, 0, 99, 44);
-            this.drawTexturedModalRect(j + 99, 30, 129, 0, 27, 44);
-            this.drawTexturedModalRect(j + 99 + 26, 30, 126, 0, 3, 44);
-            this.drawTexturedModalRect(j + 99 + 26 + 3, 30, 99, 0, 26, 44);
-            this.drawTexturedModalRect(j + 155, 30, 0, 45, 155, 44);
-        }
-        else
-        {
-            this.drawTexturedModalRect(j + 0, 30, 0, 0, 155, 44);
-            this.drawTexturedModalRect(j + 155, 30, 0, 45, 155, 44);
-        }
-
-        this.mc.getTextureManager().bindTexture(field_194400_H);
-        drawModalRectWithCustomSizedTexture(j + 88, 67, 0.0F, 0.0F, 98, 14, 128.0F, 16.0F);
-
-        if (Reflector.ForgeHooksClient_renderMainMenu.exists())
-        {
-            this.splashText = Reflector.callString(Reflector.ForgeHooksClient_renderMainMenu, this, this.fontRendererObj, this.width, this.height, this.splashText);
-        }
-
-        GlStateManager.pushMatrix();
-        GlStateManager.translate((float)(this.width / 2 + 90), 70.0F, 0.0F);
-        GlStateManager.rotate(-20.0F, 0.0F, 0.0F, 1.0F);
-        float f = 1.8F - MathHelper.abs(MathHelper.sin((float)(Minecraft.getSystemTime() % 1000L) / 1000.0F * ((float)Math.PI * 2F)) * 0.1F);
-        f = f * 100.0F / (float)(this.fontRendererObj.getStringWidth(this.splashText) + 32);
-        GlStateManager.scale(f, f, f);
-        this.drawCenteredString(this.fontRendererObj, this.splashText, 0, -8, -256);
-        GlStateManager.popMatrix();
-        String s = "Minecraft 1.12.2";
+        String s = Client.clientname + " " + Client.clientversion;
+        
+        this.drawDefaultBackground();
 
         if (this.mc.isDemo())
         {
@@ -700,12 +643,10 @@ public class GuiMainMenu extends GuiScreen
             this.drawString(this.fontRendererObj, s, 2, this.height - 10, -1);
         }
 
-        this.drawString(this.fontRendererObj, "Copyright Mojang AB. Do not distribute!", this.field_193979_N, this.height - 10, -1);
+        this.drawString(this.fontRendererObj, "                                By NotPlatzer", this.field_193979_N, this.height - 10, -1);
+       
 
-        if (mouseX > this.field_193979_N && mouseX < this.field_193979_N + this.field_193978_M && mouseY > this.height - 10 && mouseY < this.height && Mouse.isInsideWindow())
-        {
-            drawRect(this.field_193979_N, this.height - 1, this.field_193979_N + this.field_193978_M, this.height, -1);
-        }
+       
 
         if (this.openGLWarning1 != null && !this.openGLWarning1.isEmpty())
         {

@@ -1,0 +1,100 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 9/14/21 8:28 AM
+Description: Unexpected error
+
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.util.Formatter$FormatSpecifier.failConversion(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.printFloat(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.print(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.lang.String.format(Unknown Source)
+	at me.NotPlatzer.Infinity.ui.UIrenderer.draw(UIrenderer.java:21)
+	at me.NotPlatzer.Infinity.Client.onGui(Client.java:38)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:402)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1387)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1204)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:475)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.Formatter$FormatSpecifier.failConversion(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.printFloat(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.print(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.lang.String.format(Unknown Source)
+	at me.NotPlatzer.Infinity.ui.UIrenderer.draw(UIrenderer.java:21)
+	at me.NotPlatzer.Infinity.Client.onGui(Client.java:38)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:402)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player44'/483, l='MpServer', x=790.96, y=67.00, z=321.27]]
+	Chunk stats: MultiplayerChunkCache: 272, 272
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 56870 game time, 5549 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 81 total; [EntitySkeleton['Skeleton'/512, l='MpServer', x=782.71, y=31.00, z=276.49], EntitySkeleton['Skeleton'/513, l='MpServer', x=787.53, y=29.00, z=280.73], EntitySkeleton['Skeleton'/514, l='MpServer', x=786.42, y=31.00, z=289.70], EntitySkeleton['Skeleton'/515, l='MpServer', x=798.50, y=25.00, z=395.50], EntityCreeper['Creeper'/524, l='MpServer', x=813.50, y=43.00, z=252.50], EntityItem['item.item.rottenFlesh'/525, l='MpServer', x=801.76, y=69.00, z=371.81], EntitySpider['Spider'/529, l='MpServer', x=829.50, y=19.00, z=244.50], EntityCreeper['Creeper'/530, l='MpServer', x=824.50, y=29.00, z=247.50], EntityCreeper['Creeper'/531, l='MpServer', x=823.18, y=25.00, z=274.41], EntityCreeper['Creeper'/532, l='MpServer', x=817.51, y=22.00, z=306.18], EntityCreeper['Creeper'/533, l='MpServer', x=820.50, y=22.00, z=295.50], EntityBat['Bat'/534, l='MpServer', x=818.55, y=24.10, z=295.25], EntitySkeleton['Skeleton'/535, l='MpServer', x=818.50, y=18.00, z=319.50], EntityBat['Bat'/408, l='MpServer', x=718.61, y=36.11, z=245.88], EntityZombie['Zombie'/536, l='MpServer', x=823.50, y=22.00, z=317.50], EntityZombie['Zombie'/409, l='MpServer', x=717.50, y=48.00, z=262.70], EntitySquid['Squid'/537, l='MpServer', x=827.87, y=60.17, z=337.06], EntitySquid['Squid'/538, l='MpServer', x=829.44, y=53.81, z=352.67], EntitySquid['Squid'/539, l='MpServer', x=824.45, y=59.83, z=359.74], EntitySquid['Squid'/540, l='MpServer', x=828.74, y=56.00, z=358.91], EntitySpider['Spider'/413, l='MpServer', x=718.31, y=16.00, z=292.75], EntityBat['Bat'/415, l='MpServer', x=729.67, y=37.58, z=247.06], EntitySkeleton['Skeleton'/416, l='MpServer', x=722.50, y=37.00, z=241.50], EntitySquid['Squid'/544, l='MpServer', x=841.06, y=55.24, z=301.83], EntityZombie['Zombie'/417, l='MpServer', x=729.50, y=36.00, z=256.50], EntitySquid['Squid'/545, l='MpServer', x=849.81, y=54.68, z=309.30], EntitySquid['Squid'/418, l='MpServer', x=734.40, y=55.48, z=257.99], EntitySquid['Squid'/546, l='MpServer', x=845.22, y=62.58, z=310.68], EntityCreeper['Creeper'/419, l='MpServer', x=732.50, y=29.00, z=282.50], EntitySquid['Squid'/547, l='MpServer', x=833.41, y=53.75, z=303.81], EntityCreeper['Creeper'/420, l='MpServer', x=732.50, y=29.00, z=283.50], EntitySquid['Squid'/548, l='MpServer', x=837.67, y=54.84, z=342.85], EntityCreeper['Creeper'/421, l='MpServer', x=734.50, y=28.00, z=275.80], EntitySquid['Squid'/549, l='MpServer', x=841.84, y=53.68, z=333.19], EntityBat['Bat'/422, l='MpServer', x=730.45, y=37.86, z=278.44], EntitySquid['Squid'/550, l='MpServer', x=843.47, y=52.54, z=353.32], EntitySquid['Squid'/551, l='MpServer', x=835.63, y=61.73, z=351.59], EntitySquid['Squid'/552, l='MpServer', x=849.02, y=61.45, z=301.57], EntityCreeper['Creeper'/425, l='MpServer', x=736.50, y=19.00, z=255.83], EntityZombie['Zombie'/426, l='MpServer', x=745.50, y=26.00, z=248.64], EntityMinecartChest['Minecart with Chest'/427, l='MpServer', x=738.50, y=19.06, z=258.50], EntitySkeleton['Skeleton'/428, l='MpServer', x=730.77, y=36.00, z=256.50], EntitySkeleton['Skeleton'/429, l='MpServer', x=738.70, y=37.00, z=267.50], EntityBat['Bat'/430, l='MpServer', x=744.11, y=32.56, z=274.22], EntityBat['Bat'/431, l='MpServer', x=749.37, y=38.10, z=269.47], EntitySpider['Spider'/432, l='MpServer', x=744.50, y=29.00, z=274.50], EntityCreeper['Creeper'/444, l='MpServer', x=767.50, y=22.00, z=247.50], EntityZombie['Zombie'/445, l='MpServer', x=764.20, y=23.00, z=246.46], EntitySkeleton['Skeleton'/446, l='MpServer', x=746.53, y=26.00, z=248.78], EntityCreeper['Creeper'/447, l='MpServer', x=752.50, y=35.00, z=254.50], EntityZombie['Zombie'/448, l='MpServer', x=756.50, y=39.00, z=244.50], EntityBat['Bat'/449, l='MpServer', x=761.41, y=35.95, z=254.40], EntityZombie['Zombie'/450, l='MpServer', x=756.50, y=26.00, z=257.50], EntityCreeper['Creeper'/451, l='MpServer', x=754.33, y=38.00, z=264.50], EntitySpider['Spider'/452, l='MpServer', x=762.00, y=42.00, z=269.20], EntitySkeleton['Skeleton'/453, l='MpServer', x=757.54, y=62.42, z=272.00], EntitySkeleton['Skeleton'/454, l='MpServer', x=756.50, y=18.00, z=284.50], EntitySkeleton['Skeleton'/455, l='MpServer', x=754.50, y=18.00, z=275.50], EntityBat['Bat'/456, l='MpServer', x=766.47, y=41.02, z=277.55], EntityZombie['Zombie'/457, l='MpServer', x=760.25, y=11.00, z=290.52], EntityBat['Bat'/458, l='MpServer', x=764.76, y=25.10, z=298.36], EntityItem['item.item.rottenFlesh'/459, l='MpServer', x=762.98, y=73.00, z=367.41], EntityZombie['Zombie'/473, l='MpServer', x=769.75, y=41.00, z=241.44], EntitySquid['Squid'/475, l='MpServer', x=778.35, y=60.78, z=261.81], EntitySquid['Squid'/476, l='MpServer', x=777.87, y=58.75, z=264.47], EntitySquid['Squid'/477, l='MpServer', x=767.09, y=59.93, z=268.26], EntitySquid['Squid'/478, l='MpServer', x=769.32, y=57.70, z=268.43], EntitySquid['Squid'/479, l='MpServer', x=784.49, y=59.96, z=271.47], EntityCreeper['Creeper'/480, l='MpServer', x=787.47, y=31.00, z=291.17], EntitySquid['Squid'/481, l='MpServer', x=784.54, y=58.73, z=281.20], EntityZombie['Zombie'/482, l='MpServer', x=779.53, y=46.00, z=302.74], EntityRabbit['Rabbit'/484, l='MpServer', x=718.52, y=75.70, z=379.85], EntityRabbit['Rabbit'/486, l='MpServer', x=725.82, y=76.00, z=384.17], EntityRabbit['Rabbit'/487, l='MpServer', x=733.05, y=77.00, z=382.06], EntityPlayerSP['Player44'/483, l='MpServer', x=790.96, y=67.00, z=321.27], EntityBat['Bat'/499, l='MpServer', x=785.73, y=21.32, z=396.25], EntityZombie['Zombie'/507, l='MpServer', x=796.47, y=18.00, z=278.73], EntityZombie['Zombie'/508, l='MpServer', x=799.50, y=18.00, z=282.50], EntityCreeper['Creeper'/509, l='MpServer', x=795.71, y=26.00, z=278.52], EntityCreeper['Creeper'/510, l='MpServer', x=794.18, y=29.00, z=284.36], EntitySkeleton['Skeleton'/511, l='MpServer', x=785.87, y=29.00, z=276.93]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:520)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2996)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:504)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_301, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 725695984 bytes (692 MB) / 1021837312 bytes (974 MB) up to 1021837312 bytes (974 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.6.0 - Build 27.20.100.8935, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_C6
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 - Build 27.20.100.8935
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8
