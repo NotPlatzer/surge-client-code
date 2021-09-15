@@ -30,7 +30,7 @@ public class Sprint extends Module {
 	public void onEvent(Event e) {
 		if(e instanceof EventUpdate) {
 			if(e.isPre()) {
-				if(!mc.player.isSneaking()) {
+				if(!mc.player.isSneaking() && !mc.player.isCollidedHorizontally) {
 					
 					mc.player.setSprinting(true);
 					
