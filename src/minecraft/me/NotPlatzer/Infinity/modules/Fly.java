@@ -23,7 +23,7 @@ public class Fly extends Module {
 		if (e instanceof EventUpdate) {
 			if (e.isPre()) {
 				mc.player.capabilities.allowFlying = true;
-				
+			
 				mc.player.capabilities.isFlying = true;
 			}
 		}

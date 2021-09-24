@@ -2066,8 +2066,8 @@ public class Minecraft implements IThreadListener, ISnooperInfo
                 if (this.currentScreen == null)
                 {
                 	
-                	Client.onKeyPressed(i);
-                	
+                	Client.KeyPressed(i);
+                	 
                     if (i == 1)
                     {
                         this.displayInGameMenu();

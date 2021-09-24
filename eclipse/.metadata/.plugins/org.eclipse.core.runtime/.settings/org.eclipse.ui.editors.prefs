@@ -1,4 +1,6 @@
-#Sun Jun 05 18:58:05 CEST 2011
-spacesForTabs=true
+PHPReadOccurrenceIndicationColor=0,0,0
+PHPWriteOccurrenceIndicationColor=0,0,0
 eclipse.preferences.version=1
+javaScriptOccurrenceIndicationColor=0,0,0
 overviewRuler_migration=migrated_3.1
+spacesForTabs=true

@@ -1,0 +1,26 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2021-09-16 14:16:15 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "husk": "2021-09-16 14:16:15 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "husk": "2021-09-16 14:16:15 +0200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "desert": "2021-09-16 14:15:34 +0200"
+    },
+    "done": false
+  }
+}

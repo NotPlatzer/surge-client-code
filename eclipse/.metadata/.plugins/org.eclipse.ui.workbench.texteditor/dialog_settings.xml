@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="offset"/>
+		<item key="selection" value="Client"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="count*(fr.FONT_HEIGHT + 2)"/>
-			<item value="mc.fontRendererObj"/>
-			<item value="coord"/>
-			<item value="onupdate"/>
-			<item value="rightClickDelayTimer"/>
-			<item value="delay"/>
-			<item value="1.12.2"/>
-			<item value="Minecraft 1.12.2"/>
-			<item value="keyCode"/>
-			<item value="module"/>
-			<item value="key"/>
+			<item value="Client"/>
+			<item value="}"/>
+			<item value="{"/>
+			<item value="event.isonGround()"/>
+			<item value="this.onGround"/>
+			<item value="this.rotationPitch"/>
+			<item value="event.getYaw("/>
+			<item value="this.rotation"/>
+			<item value="this.rotationYaw"/>
+			<item value="axisalignedbb.minY"/>
+			<item value="this.getEntityBoundingBox().minY"/>
+			<item value="this.posZ"/>
+			<item value="this.posX"/>
+			<item value="func_17"/>
+			<item value="func_"/>
 		</list>
 		<list key="replacehistory">
+			<item value="event.isOnGround()"/>
+			<item value="event.isonGround()"/>
+			<item value="event.onGround()"/>
+			<item value="event.getPitch()"/>
+			<item value="event.getJaw("/>
+			<item value="event.getYaw()"/>
+			<item value="event.getY()"/>
+			<item value="event.getZ()"/>
+			<item value="event.getX()"/>
 			<item value="offset"/>
 			<item value="fr"/>
 		</list>
@@ -28,9 +41,9 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="1477"/>
 		<item key="DIALOG_Y_ORIGIN" value="490"/>
-		<item key="DIALOG_WIDTH" value="284"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="652"/>

@@ -1,0 +1,93 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 9/20/21 9:19 PM
+Description: Unexpected error
+
+java.lang.Error: Unresolved compilation problem: 
+
+	at me.NotPlatzer.Infinity.modules.TabGui.onEvent(TabGui.java:30)
+	at me.NotPlatzer.Infinity.Client.onEvent(Client.java:46)
+	at me.NotPlatzer.Infinity.ui.HUD.draw(HUD.java:76)
+	at me.NotPlatzer.Infinity.Client.onGui(Client.java:54)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:402)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1387)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1204)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:475)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at me.NotPlatzer.Infinity.modules.TabGui.onEvent(TabGui.java:30)
+	at me.NotPlatzer.Infinity.Client.onEvent(Client.java:46)
+	at me.NotPlatzer.Infinity.ui.HUD.draw(HUD.java:76)
+	at me.NotPlatzer.Infinity.Client.onGui(Client.java:54)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:402)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player523'/225, l='MpServer', x=438.72, y=75.50, z=265.30]]
+	Chunk stats: MultiplayerChunkCache: 121, 121
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 160628 game time, 13234 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 41 total; [EntityRabbit['Rabbit'/8, l='MpServer', x=389.28, y=74.00, z=234.72], EntityRabbit['Rabbit'/26, l='MpServer', x=412.42, y=76.00, z=212.40], EntityRabbit['Rabbit'/41, l='MpServer', x=435.94, y=75.00, z=203.98], EntityItem['item.item.arrow'/4147, l='MpServer', x=459.49, y=71.00, z=329.93], EntityItem['item.item.bone'/4148, l='MpServer', x=458.14, y=71.00, z=328.98], EntitySkeleton['Skeleton'/4164, l='MpServer', x=387.45, y=28.00, z=273.01], EntitySkeleton['Skeleton'/4165, l='MpServer', x=391.49, y=28.00, z=266.73], EntityBat['Bat'/4199, l='MpServer', x=416.18, y=23.97, z=209.08], EntityBat['Bat'/4200, l='MpServer', x=415.19, y=24.00, z=210.11], EntitySkeleton['Skeleton'/3232, l='MpServer', x=392.50, y=27.00, z=245.67], EntityRabbit['Rabbit'/3233, l='MpServer', x=384.59, y=73.00, z=243.99], EntityBat['Bat'/4289, l='MpServer', x=386.52, y=29.32, z=274.19], EntityBat['Bat'/4302, l='MpServer', x=465.82, y=24.49, z=252.43], EntitySpider['Spider'/4309, l='MpServer', x=468.50, y=22.00, z=244.50], EntitySkeleton['Skeleton'/4311, l='MpServer', x=470.50, y=24.00, z=248.29], EntitySkeleton['Skeleton'/4312, l='MpServer', x=409.50, y=47.00, z=264.50], EntityBat['Bat'/3824, l='MpServer', x=380.49, y=34.75, z=277.34], EntityCreeper['Creeper'/3825, l='MpServer', x=387.92, y=35.00, z=272.06], EntityCreeper['Creeper'/3826, l='MpServer', x=392.50, y=47.00, z=272.50], EntityItem['item.tile.mushroom'/3827, l='MpServer', x=408.13, y=11.00, z=286.88], EntitySpider['Spider'/3828, l='MpServer', x=426.95, y=45.10, z=282.30], EntityCreeper['Creeper'/3829, l='MpServer', x=419.50, y=31.00, z=216.50], EntityCreeper['Creeper'/3932, l='MpServer', x=491.50, y=24.00, z=207.50], EntityCreeper['Creeper'/4477, l='MpServer', x=405.50, y=38.00, z=255.50], EntityPlayerSP['Player523'/225, l='MpServer', x=438.72, y=75.50, z=265.30], EntityRabbit['Rabbit'/4010, l='MpServer', x=395.88, y=73.00, z=295.52], EntityBat['Bat'/4011, l='MpServer', x=422.15, y=44.70, z=297.55], EntityBat['Bat'/4012, l='MpServer', x=419.65, y=43.10, z=301.25], EntityCreeper['Creeper'/3512, l='MpServer', x=420.50, y=24.00, z=262.50], EntityCreeper['Creeper'/3513, l='MpServer', x=421.50, y=24.00, z=261.50], EntitySkeleton['Skeleton'/3514, l='MpServer', x=409.91, y=24.00, z=259.51], EntitySkeleton['Skeleton'/3515, l='MpServer', x=409.30, y=24.00, z=259.50], EntitySpider['Spider'/3516, l='MpServer', x=414.50, y=23.00, z=260.50], EntitySkeleton['Skeleton'/3517, l='MpServer', x=412.50, y=23.00, z=258.50], EntitySkeleton['Skeleton'/3518, l='MpServer', x=403.50, y=38.00, z=260.50], EntityZombie['Zombie'/3519, l='MpServer', x=404.50, y=37.00, z=261.50], EntityZombie['Zombie'/3520, l='MpServer', x=405.48, y=37.00, z=262.24], EntityRabbit['Rabbit'/4033, l='MpServer', x=397.57, y=72.31, z=306.57], EntityRabbit['Rabbit'/4034, l='MpServer', x=405.15, y=72.00, z=305.76], EntityBat['Bat'/3534, l='MpServer', x=472.24, y=20.13, z=275.98], EntityBat['Bat'/3535, l='MpServer', x=474.75, y=28.10, z=255.45]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:520)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2996)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:504)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_301, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 710853792 bytes (677 MB) / 1036517376 bytes (988 MB) up to 1036517376 bytes (988 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.6.0 - Build 27.20.100.8935, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_C6
+	Render Distance Chunks: 5
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 - Build 27.20.100.8935
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

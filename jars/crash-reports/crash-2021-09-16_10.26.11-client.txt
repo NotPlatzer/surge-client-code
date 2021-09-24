@@ -1,0 +1,94 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 9/16/21 10:26 AM
+Description: Unexpected error
+
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at me.NotPlatzer.Infinity.modules.TabGui.onEvent(TabGui.java:106)
+	at me.NotPlatzer.Infinity.Client.onEvent(Client.java:46)
+	at me.NotPlatzer.Infinity.Client.KeyPressed(Client.java:83)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2069)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1918)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1184)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:475)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at me.NotPlatzer.Infinity.modules.TabGui.onEvent(TabGui.java:106)
+	at me.NotPlatzer.Infinity.Client.onEvent(Client.java:46)
+	at me.NotPlatzer.Infinity.Client.KeyPressed(Client.java:83)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2069)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player688'/148, l='MpServer', x=271.74, y=79.00, z=224.43]]
+	Chunk stats: MultiplayerChunkCache: 120, 120
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 121536 game time, 44664 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 28 total; [EntityRabbit['Rabbit'/195, l='MpServer', x=252.79, y=73.23, z=202.20], EntityRabbit['Rabbit'/208, l='MpServer', x=265.54, y=69.32, z=288.07], EntityRabbit['Rabbit'/149, l='MpServer', x=267.90, y=77.00, z=236.38], EntityRabbit['Rabbit'/214, l='MpServer', x=282.49, y=78.12, z=215.04], EntitySkeleton['Skeleton'/215, l='MpServer', x=280.79, y=65.00, z=221.36], EntityRabbit['Rabbit'/216, l='MpServer', x=281.05, y=79.00, z=222.51], EntityRabbit['Rabbit'/217, l='MpServer', x=274.48, y=77.00, z=210.27], EntityRabbit['Rabbit'/222, l='MpServer', x=296.47, y=71.00, z=270.07], EntitySkeleton['Skeleton'/286, l='MpServer', x=329.50, y=15.00, z=269.50], EntityRabbit['Rabbit'/223, l='MpServer', x=289.07, y=74.00, z=256.54], EntitySkeleton['Skeleton'/287, l='MpServer', x=328.50, y=15.00, z=272.50], EntityBat['Bat'/160, l='MpServer', x=207.98, y=39.93, z=198.83], EntityCreeper['Creeper'/294, l='MpServer', x=312.50, y=58.00, z=285.50], EntityRabbit['Rabbit'/231, l='MpServer', x=313.49, y=77.00, z=200.81], EntityCreeper['Creeper'/295, l='MpServer', x=310.51, y=57.00, z=288.01], EntityHusk['Husk'/232, l='MpServer', x=310.22, y=77.00, z=238.69], EntitySkeleton['Skeleton'/233, l='MpServer', x=310.43, y=77.00, z=242.71], EntityBat['Bat'/234, l='MpServer', x=312.18, y=62.35, z=283.46], EntityHusk['Husk'/298, l='MpServer', x=275.50, y=73.00, z=196.50], EntityCreeper['Creeper'/175, l='MpServer', x=219.50, y=26.00, z=175.50], EntityCreeper['Creeper'/176, l='MpServer', x=212.48, y=24.00, z=169.66], EntityBat['Bat'/177, l='MpServer', x=222.08, y=26.12, z=176.25], EntityBat['Bat'/178, l='MpServer', x=221.91, y=24.89, z=179.45], EntityBat['Bat'/179, l='MpServer', x=222.88, y=25.51, z=177.71], EntityBat['Bat'/180, l='MpServer', x=211.94, y=20.24, z=244.65], EntityPlayerSP['Player688'/148, l='MpServer', x=271.74, y=79.00, z=224.43], EntityZombie['Zombie'/188, l='MpServer', x=228.27, y=50.00, z=161.50], EntityCreeper['Creeper'/189, l='MpServer', x=236.21, y=60.00, z=255.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:520)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2996)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:504)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_301, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 730281080 bytes (696 MB) / 1008730112 bytes (962 MB) up to 1008730112 bytes (962 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.6.0 - Build 27.20.100.8935, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_C6
+	Render Distance Chunks: 5
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 - Build 27.20.100.8935
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

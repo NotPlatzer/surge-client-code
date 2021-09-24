@@ -8,6 +8,7 @@ public enum Category {
 	
 	RENDER, COMBAT, MOVEMENT, PLAYER, MISC, NONE;
 	
+	public int moduleIndex;
 	
 	public static int size(Category cat) {
 		
@@ -152,5 +153,4 @@ public static int placeInListMisc(Module module) {
 }
 
 }
-
 

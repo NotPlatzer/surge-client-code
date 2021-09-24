@@ -6,9 +6,10 @@ import java.awt.Color;
 import org.lwjgl.opengl.Display;
 
 import me.NotPlatzer.Infinity.events.Event;
+import me.NotPlatzer.Infinity.events.listeners.EventKey;
 import me.NotPlatzer.Infinity.module.Module;
 import me.NotPlatzer.Infinity.module.ModuleManager;
-import me.NotPlatzer.Infinity.ui.UIrenderer;
+import me.NotPlatzer.Infinity.ui.HUD;
 import net.minecraft.client.Minecraft;
 
 
@@ -18,18 +19,18 @@ public class Client {
 	
 	public static String clientname = "Surge Client";
 	public static String clientversion = "1.1";
-	public static int clientcolor = 0x002aff;
+	public static int clientcolor = 0xff002aff;
 	
 	public static void nameChange() {
 		Display.setTitle(clientname + " " + clientversion);
 	}
 	
-	public static UIrenderer uirenderer;
+	public static HUD hud;
 	public static ModuleManager modulemanager;
 	
 	public static void init() {
 		
-		uirenderer = new UIrenderer();
+		hud = new HUD();
 		modulemanager = new ModuleManager();
 		modulemanager.init();
 		
@@ -50,7 +51,7 @@ public class Client {
 	
 	public static void onGui() {
 		
-		uirenderer.draw();
+		hud.draw();
 	}
 	
 	
@@ -78,10 +79,12 @@ public class Client {
 	}
 
 	
-	public static void onKeyPressed(int keycode) {
-		
+	public static void KeyPressed(int key) {
+		Client.onEvent(new EventKey(key));
 	for(Module module : modulemanager.modulelist) {
-		module.onKeyPressed(keycode);
+		if(module.getKey() == key) {
+			module.toggle();
+		}
 	}
 		
 	}
